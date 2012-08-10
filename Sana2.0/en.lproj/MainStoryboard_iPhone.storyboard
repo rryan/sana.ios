@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="WMZ-bb-Clo">
+    <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
+        <development defaultVersion="4200" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="W1K-WU-xXt">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iGI-Eq-SAX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="WMZ-bb-Clo" customClass="HomeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L14-Pt-5zz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="gGp-GG-G6I" customClass="KenBurnsView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="sana_logo.png" id="OHN-Ow-Px5">
+                                <rect key="frame" x="-32" y="11" width="384" height="198"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ded-7W-V8C" customClass="GradientButton">
+                                <rect key="frame" x="20" y="222" width="280" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                <state key="normal" title="Create New Encounter">
+                                    <color key="titleColor" red="0.1960784314" green="0.30980392159999998" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="createNewEncounter:" destination="WMZ-bb-Clo" eventType="touchUpInside" id="3HG-zD-GQh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UD3-fW-wDb" customClass="GradientButton">
+                                <rect key="frame" x="20" y="304" width="280" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                <state key="normal" title="View Previous Encounters">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="viewPreviousEncounters:" destination="WMZ-bb-Clo" eventType="touchUpInside" id="X1r-bd-Upz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ugu-WS-iLU" customClass="GradientButton">
+                                <rect key="frame" x="20" y="386" width="280" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                <state key="normal" title="View Notifications">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="viewNotifications:" destination="WMZ-bb-Clo" eventType="touchUpInside" id="YI0-fb-JGg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="mRo-ps-X8L" customClass="GradientButton">
+                                <rect key="frame" x="0.0" y="0.0" width="26" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                <state key="normal" image="gear_small.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="viewSettings:" destination="WMZ-bb-Clo" eventType="touchUpInside" id="HMg-5K-AkT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="createNewEncounterButton" destination="Ded-7W-V8C" id="ZAX-Qx-lVU"/>
+                        <outlet property="kenView" destination="gGp-GG-G6I" id="uDI-VN-1SC"/>
+                        <outlet property="settingsButton" destination="mRo-ps-X8L" id="JBR-1s-VZ5"/>
+                        <outlet property="viewNotificationsButton" destination="ugu-WS-iLU" id="nq3-WV-00H"/>
+                        <outlet property="viewPreviousEncountersButton" destination="UD3-fW-wDb" id="V9R-4o-7as"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-1869" y="-1340"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gear_small.png" width="20" height="20"/>
+        <image name="sana_logo.png" width="420" height="200"/>
+    </resources>
+    <classes>
+        <class className="GradientButton" superclassName="UIButton">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GradientButton.h"/>
+        </class>
+        <class className="HomeViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/HomeViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="createNewEncounter:"/>
+                <relationship kind="action" name="viewNotifications:"/>
+                <relationship kind="action" name="viewPreviousEncounters:"/>
+                <relationship kind="action" name="viewSettings:"/>
+                <relationship kind="outlet" name="createNewEncounterButton" candidateClass="GradientButton"/>
+                <relationship kind="outlet" name="kenView" candidateClass="KenBurnsView"/>
+                <relationship kind="outlet" name="settingsButton" candidateClass="GradientButton"/>
+                <relationship kind="outlet" name="viewNotificationsButton" candidateClass="GradientButton"/>
+                <relationship kind="outlet" name="viewPreviousEncountersButton" candidateClass="GradientButton"/>
+            </relationships>
+        </class>
+        <class className="KenBurnsView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/KenBurnsView.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
